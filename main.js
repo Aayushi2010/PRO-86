@@ -1,7 +1,10 @@
+
+var canvas = new fabric.Canvas("myCanvas");
+
 function new_image()
 
 {
-    fabric.Image.fromURL('HAPPYBDAY.jpeg'), function (Image) {
+    fabric.Image.fromURL('HAPPYBDAY.jpeg', function (Image) {
         block_image_object = Img;
         
         block_img_object.scaleToWidth(700);
@@ -11,6 +14,6 @@ function new_image()
             left: 0
     });
 
-    canvas.add(block_image_object)
+    canvas.add(block_image_object);
 });
 }
